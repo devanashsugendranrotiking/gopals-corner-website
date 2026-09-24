@@ -20,7 +20,7 @@ python3 -m http.server 8000
 
 ## To do
 
-- Add the London address (search `TODO` in `index.html`).
+- Add the unit number for Westfield Stratford (search `TODO` in `index.html`).
 - Add customer reviews.
 
 The menu section mirrors `gopals-corner-menu.pdf`. Update both when prices change.
