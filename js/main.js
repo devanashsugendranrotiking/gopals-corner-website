@@ -1,21 +1,36 @@
-// Mobile menu toggle
+// Mobile menu
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('site-nav');
 
+function setMenu(open) {
+  toggle.setAttribute('aria-expanded', String(open));
+  nav.classList.toggle('open', open);
+}
+
 toggle.addEventListener('click', () => {
-  const open = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!open));
-  toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
-  nav.classList.toggle('open', !open);
+  setMenu(toggle.getAttribute('aria-expanded') !== 'true');
 });
 
-// Close the menu after picking a section
 nav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'Open menu');
-    nav.classList.remove('open');
-  });
+  link.addEventListener('click', () => setMenu(false));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.classList.contains('open')) {
+    setMenu(false);
+    toggle.focus();
+  }
+});
+
+// Pause / play the scrolling band
+const band = document.querySelector('.band');
+const bandToggle = document.querySelector('.band-toggle');
+
+bandToggle.addEventListener('click', () => {
+  const paused = bandToggle.getAttribute('aria-pressed') !== 'true';
+  bandToggle.setAttribute('aria-pressed', String(paused));
+  bandToggle.querySelector('.sr-only').textContent = paused ? 'Play scrolling text' : 'Pause scrolling text';
+  band.classList.toggle('paused', paused);
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
