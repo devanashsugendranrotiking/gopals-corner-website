@@ -4,9 +4,9 @@ A static, one-page website for Gopal's Corner by Roti King (est. 1976, London an
 
 ## Structure
 
-- `index.html`: the page (hero, story, menu highlights, gallery, visit)
+- `index.html`: the page (hero, scrolling band, what makes us different, crowd favourites, menu, story, visit)
 - `css/styles.css`: styles, with the green and gold palette taken from the shopfront sign
-- `js/main.js`: mobile menu toggle
+- `js/main.js`: mobile menu and the pause button for the scrolling band
 - `images/`: photography
 
 ## Run locally
@@ -20,3 +20,4 @@ python3 -m http.server 8000
 ## To do
 
 - Add the London and Kuala Lumpur addresses and opening hours (search `TODO` in `index.html`).
+- Replace the sample dishes in the menu with the real menu.

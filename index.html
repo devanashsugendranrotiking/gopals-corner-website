@@ -4,144 +4,237 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gopal's Corner by Roti King</title>
-  <meta name="description" content="Gopal's Corner by Roti King: Malaysian Indian cooking since 1976. Roti, dosa, banana leaf rice and wok-fried noodles in London and Kuala Lumpur.">
+  <meta name="description" content="Gopal's Corner by Roti King: Malaysian Indian cooking since 1976. Roti canai, dosa, banana leaf rice and mee goreng in London and Kuala Lumpur.">
+  <meta name="theme-color" content="#1e4032">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reused icons -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true">
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 18h18l-1.5-10-4.5 4-3-6-3 6-4.5-4z" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#top" class="brand" aria-label="Gopal's Corner home">
-        <span class="brand-script">Gopal's</span>
-        <span class="brand-caps">Corner</span>
+      <a href="#top" class="brand" aria-label="Gopal's Corner, back to top">
+        <span class="brand-script">Gopal's</span><span class="brand-caps">Corner</span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="site-nav" class="site-nav">
-        <a href="#story">Our Story</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
         <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#visit">Visit</a>
+        <a href="#story">Our Story</a>
+        <a href="#visit" class="nav-cta">Visit Us</a>
       </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
     <!-- Hero -->
-    <section class="hero">
-      <div class="hero-bg" role="img" aria-label="Banana leaf rice with fried chicken, curry, vegetables and papadum"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">Est. in 1976</p>
-        <h1>
-          <span class="hero-script">Gopal's</span>
-          <span class="hero-caps">Corner</span>
-        </h1>
-        <p class="byline"><span class="crown" aria-hidden="true">&#9819;</span> By Roti King <span class="crown" aria-hidden="true">&#9819;</span></p>
-        <p class="cities"><span>London</span><span>Kuala Lumpur</span></p>
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Roti &amp; Curry</h1>
+        <p class="hero-sub">Malaysian Indian cooking from the Gopal family since 1976, now in London and Kuala Lumpur.</p>
         <div class="hero-actions">
-          <a href="#menu" class="btn btn-gold">See the Menu</a>
-          <a href="#visit" class="btn btn-outline">Find Us</a>
+          <a href="#menu" class="btn btn-cream">See the Menu</a>
+          <a href="#story" class="btn btn-ghost">Our Story</a>
         </div>
-      </div>
-    </section>
 
-    <!-- Story -->
-    <section id="story" class="section story">
-      <div class="container story-grid">
-        <figure class="story-photo">
-          <img src="images/storefront-founders.jpg" alt="Gopal and his wife standing outside the Gopal's Corner restaurant" width="900" height="1200" loading="lazy">
-        </figure>
-        <div class="story-text">
-          <p class="eyebrow eyebrow-dark">Our Story</p>
-          <h2>Nearly fifty years of Malaysian Indian cooking</h2>
-          <p>
-            Gopal's Corner started in 1976 as a family kitchen serving the
-            dishes Malaysia runs on: flaky roti canai, crisp dosa, rich curries
-            and rice served on a banana leaf.
-          </p>
-          <p>
-            Today it is part of the Roti King family, cooking the same recipes
-            for a new generation of diners in London and Kuala Lumpur. The
-            recipes haven't changed, and neither has the welcome.
-          </p>
-          <div class="stats">
-            <div><strong>1976</strong><span>Founded</span></div>
-            <div><strong>2</strong><span>Cities</span></div>
-            <div><strong>1</strong><span>Family</span></div>
+        <div class="hero-media">
+          <img src="images/wok-fried-noodles.jpg" alt="A plate of mee goreng with prawns, fresh chilli, spring onion and lime" width="900" height="900" fetchpriority="high">
+          <div class="badge" aria-hidden="true">
+            <svg class="badge-ring" viewBox="0 0 120 120">
+              <defs><path id="badge-circle" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+              <text><textPath href="#badge-circle" textLength="272" lengthAdjust="spacing">Est. 1976 &#8226; Gopal's Corner &#8226; Roti King &#8226;</textPath></text>
+            </svg>
+            <svg class="badge-crown"><use href="#i-crown"/></svg>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Menu highlights -->
-    <section id="menu" class="section menu">
+    <!-- Scrolling band -->
+    <div class="band">
+      <div class="band-track">
+        <ul class="band-list">
+          <li>Roti Canai</li><li>Banana Leaf Rice</li><li>Crispy Dosa</li><li>Teh Tarik</li><li>Mee Goreng</li><li>Nasi Lemak</li>
+        </ul>
+        <ul class="band-list" aria-hidden="true">
+          <li>Roti Canai</li><li>Banana Leaf Rice</li><li>Crispy Dosa</li><li>Teh Tarik</li><li>Mee Goreng</li><li>Nasi Lemak</li>
+        </ul>
+      </div>
+      <button class="band-toggle" aria-pressed="false">
+        <span class="sr-only">Pause scrolling text</span>
+        <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>
+      </button>
+    </div>
+
+    <!-- Why Gopal's -->
+    <section class="section cream scallop-top why">
       <div class="container">
-        <p class="eyebrow">From Our Kitchen</p>
-        <h2 class="section-title">Menu Highlights</h2>
-        <div class="menu-grid">
-          <article class="dish">
-            <img src="images/banana-leaf-rice.jpg" alt="Banana leaf rice with fried chicken, curry, vegetables, dried chillies and papadum" width="1280" height="853" loading="lazy">
-            <div class="dish-body">
+        <h2 class="title">What makes<br>Gopal's different?</h2>
+        <p class="lede">Family recipes, cooked the way they have been for almost fifty years.</p>
+        <ul class="features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+            <h3>Since 1976</h3>
+            <p>The recipes Gopal first cooked in Kuala Lumpur, still made the same way.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+            <h3>Made by hand</h3>
+            <p>Every roti is stretched, folded and flipped in front of you.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <h3>Cooked to order</h3>
+            <p>Curries simmered daily and noodles fired in a hot wok when you order.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h3>Two homes</h3>
+            <p>One family kitchen in Kuala Lumpur and one in London.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Favourites -->
+    <section class="section cream favourites" aria-labelledby="fav-title">
+      <div class="container">
+        <h2 class="title" id="fav-title">Crowd Favourites</h2>
+        <p class="lede">The plates our regulars order again and again.</p>
+        <div class="fav-grid">
+          <article class="fav fav-gold">
+            <img src="images/banana-leaf-rice.jpg" alt="Banana leaf rice with fried chicken, curry, vegetables and papadum" width="1280" height="853" loading="lazy">
+            <div class="fav-body">
               <h3>Banana Leaf Rice</h3>
-              <p>Steamed rice on a banana leaf with fried chicken, curry, seasonal vegetables, sambal and papadum.</p>
+              <p>Rice on a banana leaf with fried chicken, curry, vegetables, sambal and papadum.</p>
             </div>
           </article>
-          <article class="dish">
-            <img src="images/dosa-roti-spread.jpg" alt="Dosa and roti canai served with dhal, curries and coconut chutney" width="678" height="452" loading="lazy">
-            <div class="dish-body">
+          <article class="fav fav-chili">
+            <img src="images/dosa-roti-spread.jpg" alt="Roti canai and dosa with dhal, curries and coconut chutney" width="678" height="452" loading="lazy">
+            <div class="fav-body">
               <h3>Roti Canai &amp; Dosa</h3>
-              <p>Hand-stretched roti and golden, crisp dosa with dhal, curry and coconut chutney for dipping.</p>
+              <p>Flaky roti and crisp dosa with dhal, curry and coconut chutney for dipping.</p>
             </div>
           </article>
-          <article class="dish">
-            <img src="images/wok-fried-noodles.jpg" alt="Wok-fried noodles with prawns, chilli, spring onion and lime" width="900" height="900" loading="lazy">
-            <div class="dish-body">
-              <h3>Wok-Fried Noodles</h3>
-              <p>Smoky noodles tossed in a hot wok with prawns, bean sprouts, fresh chilli and a squeeze of lime.</p>
+          <article class="fav fav-green">
+            <img src="images/wok-fried-noodles.jpg" alt="Mee goreng with prawns, chilli and lime" width="900" height="900" loading="lazy">
+            <div class="fav-body">
+              <h3>Mee Goreng</h3>
+              <p>Smoky wok-fried noodles with prawns, bean sprouts, fresh chilli and lime.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section gallery">
-      <div class="container">
-        <p class="eyebrow eyebrow-dark">Gallery</p>
-        <h2 class="section-title section-title-dark">A Taste of Gopal's</h2>
-        <div class="gallery-grid">
-          <img class="g-tall" src="images/storefront-founders.jpg" alt="The founders outside Gopal's Corner" loading="lazy">
-          <img src="images/wok-fried-noodles.jpg" alt="Wok-fried noodles with prawns" loading="lazy">
-          <img src="images/dosa-roti-spread.jpg" alt="Dosa and roti canai spread" loading="lazy">
-          <img class="g-wide" src="images/banana-leaf-rice.jpg" alt="Banana leaf rice" loading="lazy">
+    <!-- Menu -->
+    <!-- TODO: replace these dishes with the restaurant's real menu -->
+    <section class="section cream menu" id="menu" aria-labelledby="menu-title">
+      <div class="container narrow">
+        <h2 class="title" id="menu-title">Discover Our Menu</h2>
+        <p class="lede">Roti from the griddle, rice and curry, noodles from the wok and a proper teh tarik.</p>
+
+        <div class="accordion">
+          <details open>
+            <summary>
+              <svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12a2 2 0 1 1 2-2 4 4 0 1 1-4 5.5 6 6 0 1 1 7.5-6.5"/></svg>
+              <span>Roti</span>
+              <svg class="chev"><use href="#i-chevron"/></svg>
+            </summary>
+            <ul class="dishes">
+              <li><h3>Roti Canai</h3><p>Flaky flatbread with dhal and fish or chicken curry.</p></li>
+              <li><h3>Roti Telur</h3><p>Roti folded around egg and onion.</p></li>
+              <li><h3>Roti Tisu</h3><p>Paper-thin, crisp and sweet, drizzled with condensed milk.</p></li>
+              <li><h3>Murtabak</h3><p>Stuffed roti with spiced minced meat, egg and onion.</p></li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M7 21h10"/><path d="M8 8c1-1.5 2.5-2 4-2s3 .5 4 2"/></svg>
+              <span>Rice</span>
+              <svg class="chev"><use href="#i-chevron"/></svg>
+            </summary>
+            <ul class="dishes">
+              <li><h3>Banana Leaf Rice</h3><p>Rice, curry, vegetables, sambal and papadum on a banana leaf.</p></li>
+              <li><h3>Nasi Lemak</h3><p>Coconut rice with sambal, anchovies, peanuts, egg and cucumber.</p></li>
+              <li><h3>Ayam Goreng</h3><p>Spiced fried chicken, crisp outside and juicy inside.</p></li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M7 20h10"/><path d="M9 11 13 3"/><path d="M13 11l4-7"/></svg>
+              <span>Noodles &amp; Dosa</span>
+              <svg class="chev"><use href="#i-chevron"/></svg>
+            </summary>
+            <ul class="dishes">
+              <li><h3>Mee Goreng</h3><p>Wok-fried yellow noodles with prawns, chilli and lime.</p></li>
+              <li><h3>Char Kway Teow</h3><p>Flat rice noodles with prawns, egg and bean sprouts.</p></li>
+              <li><h3>Masala Dosa</h3><p>Crisp rice and lentil crêpe with spiced potato.</p></li>
+            </ul>
+          </details>
+          <details>
+            <summary>
+              <svg class="cat-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M6 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/></svg>
+              <span>Drinks</span>
+              <svg class="chev"><use href="#i-chevron"/></svg>
+            </summary>
+            <ul class="dishes">
+              <li><h3>Teh Tarik</h3><p>Pulled milk tea, poured high for a frothy top.</p></li>
+              <li><h3>Kopi</h3><p>Strong Malaysian coffee with condensed milk.</p></li>
+              <li><h3>Sirap Bandung</h3><p>Rose syrup and milk over ice.</p></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section green scallop-top story" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <figure class="story-photo">
+          <img src="images/storefront-founders.jpg" alt="Gopal and his wife outside the Gopal's Corner restaurant" width="900" height="1200" loading="lazy">
+        </figure>
+        <div class="story-text">
+          <h2 class="title title-light" id="story-title">Our Story</h2>
+          <p>Gopal's Corner began in 1976 as a small family kitchen serving the food Malaysia runs on: roti off the griddle, dosa, rich curries and rice on a banana leaf.</p>
+          <p>Today it is part of the Roti King family, and the recipes are cooked for a new generation in London and Kuala Lumpur. They haven't changed, and neither has the welcome.</p>
+          <p class="sign-off">From our family to yours.</p>
         </div>
       </div>
     </section>
 
     <!-- Visit -->
-    <section id="visit" class="section visit">
-      <div class="container visit-grid">
-        <div class="location">
-          <h3>London</h3>
-          <!-- TODO: add the London address and opening hours -->
-          <p>Address coming soon</p>
-          <p class="hours">Opening hours coming soon</p>
-        </div>
-        <div class="visit-center">
-          <p class="eyebrow">Come Hungry</p>
-          <h2>Visit Us</h2>
-          <p>Walk in and grab a seat. Everything is cooked fresh to order.</p>
-        </div>
-        <div class="location">
-          <h3>Kuala Lumpur</h3>
-          <!-- TODO: add the Kuala Lumpur address and opening hours -->
-          <p>Address coming soon</p>
-          <p class="hours">Opening hours coming soon</p>
+    <section class="section green visit" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="visit-card">
+          <h2 class="title" id="visit-title">Come Eat With Us</h2>
+          <p class="lede">Walk in and grab a seat. Everything is cooked fresh to order.</p>
+          <div class="locations">
+            <!-- TODO: add addresses and opening hours -->
+            <div class="location">
+              <h3>London</h3>
+              <p>Address coming soon</p>
+              <p class="muted">Opening hours coming soon</p>
+            </div>
+            <div class="location">
+              <h3>Kuala Lumpur</h3>
+              <p>Address coming soon</p>
+              <p class="muted">Opening hours coming soon</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -149,13 +242,12 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <a href="#top" class="brand brand-footer">
-        <span class="brand-script">Gopal's</span>
-        <span class="brand-caps">Corner</span>
+    <div class="container footer-inner">
+      <a href="#top" class="brand" aria-label="Gopal's Corner, back to top">
+        <span class="brand-script">Gopal's</span><span class="brand-caps">Corner</span>
       </a>
-      <p>By Roti King &middot; London &middot; Kuala Lumpur</p>
-      <p class="copyright">&copy; <span id="year">2026</span> Gopal's Corner. All rights reserved.</p>
+      <p class="footer-by"><svg aria-hidden="true"><use href="#i-crown"/></svg> By Roti King <svg aria-hidden="true"><use href="#i-crown"/></svg></p>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Gopal's Corner. London and Kuala Lumpur.</p>
     </div>
   </footer>
 
