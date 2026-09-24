@@ -18,8 +18,4 @@ No build step is needed. Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000
 ```
 
-## To do
-
-- Add the unit number for Westfield Stratford (search `TODO` in `index.html`).
-
 The menu section mirrors `gopals-corner-menu.pdf`. Update both when prices change.
